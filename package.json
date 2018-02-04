@@ -42,7 +42,7 @@
     "shader-reload": "^1.2.2"
   },
   "scripts": {
-    "start": "budo ./lib/index.js:bundle.js --dir app --live -- -t babelify -t glslify -t [ installify --save ]",
+    "start": "glsl-server ./lib/index.js:bundle.js --dir app --live -- -t babelify -t glslify -t [ installify --save ]",
     "test": "node test.js",
     "build": "node tools/bundler.js"
   },
